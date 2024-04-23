@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import Image from 'next/image';
 import Projectscards from './projectscards';
 import Projecttag from './projecttag';
@@ -10,6 +10,8 @@ import project4img from "../public/projects/4.png";
 import project5img from "../public/projects/5.png";
 import project6img from "../public/projects/6.png";
 import Link from 'next/link';
+import { motion, useInView } from "framer-motion";
+
 
 const projectsData = [
     {
@@ -70,6 +72,8 @@ const projectsData = [
 
 const Projectsection = () => {
     const [tag, setTag] = useState("All");
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true});
 
     const handleTagChange = (newTag) => {
         setTag(newTag)
@@ -79,8 +83,13 @@ const Projectsection = () => {
         project.tag.includes(tag)
     );
 
+    const cardVariants = {
+        initial: { y: 50, opacity: 0},
+        animate: { y: 0, opacity:1}
+    }
+
     return (
-        <>
+        <section ref={ref}>
         <div>
             <h2 className='text-white text-center text-2xl font-semibold mt-2'>My Projects</h2>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6 '>
@@ -100,8 +109,9 @@ const Projectsection = () => {
             isSelected={tag === "Mobile"}
             />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 z-10">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 z-10"> 
                 {filterdProjects.map((project) => (
+                 <motion.li>  
                     <div key={project.id} className="relative">
                         <div className="group relative">
                             <Image src={project.image} alt={project.title} className='rounded-t-xl' />
@@ -130,10 +140,11 @@ const Projectsection = () => {
                          >
                         </div>
                     </div>
+                 </motion.li> 
                 ))}
+            </ul>
             </div>
-            </div>
-        </>
+        </section>
     )
 }
 
