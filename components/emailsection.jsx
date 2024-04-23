@@ -72,7 +72,7 @@ const emailsection = () => {
                  />
                  </div>
                  <div className='mb-6'>
-                  <label htmlFor='subject' className='text-white block mb-2 text-sm font-medium'>Subjects</label>
+                  <label htmlFor='subject' className='text-white block mb-2 text-sm font-medium'>Subject</label>
                 <input 
                  name='subject'
                  type="text"
@@ -84,7 +84,7 @@ const emailsection = () => {
                  </div>
                  <div className='mb-6'>
                     <label htmlFor='message' className='text-white block text-sm mb-2 font-medium'>
-                        Messages
+                        Message
                     </label>
                     <textarea
                     name='message'
@@ -97,7 +97,7 @@ const emailsection = () => {
                  type='submit'
                  className='bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full '
                  >
-                 Send Messages
+                 Send Message
                  </button>
                  {
                   emailSubmitted  && (
