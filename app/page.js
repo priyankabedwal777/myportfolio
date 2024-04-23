@@ -2,6 +2,9 @@ import Aboutsection from "@/components/aboutsection";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import Projectsection from "@/components/projectsection";
+import Emailsection from "@/components/emailsection";
+import Footer from "@/components/footer";
+import Achievements from "@/components/achievements";
 
 export default function Home() {
   return (
@@ -10,10 +13,12 @@ export default function Home() {
    {/* container  */}
    <div className="container w-full mt-24 mx-auto px-12 py-4">
     <Hero />
+    <Achievements/>
     <Aboutsection/>
     <Projectsection/>
-    {/* <Projectscards/> */}
+    <Emailsection/>
     </div>
+    <Footer/>
   </main>
   );
 }
