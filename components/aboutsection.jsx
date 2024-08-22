@@ -25,9 +25,12 @@ const TAB_DATA = [
     id:"education",
     content: (
     <ul className='list-disc pl-2'>
-        <li>FrontEnd Developer</li>
+      <li>Master's of Computer Application -2023 to Present</li>
+      <li>Bachelor's of Computer Application - Punjab Technical University -with 85%</li>
+      <li>12th G.J Senior Secondary School, Hisar with 84%</li>
+        {/* <li>FrontEnd Developer</li>
         <li>Web Designer</li>
-        <li>Web Developer</li>
+        <li>Web Developer</li> */}
     </ul> 
     ) 
   },
@@ -58,7 +61,7 @@ const Aboutsection = () => {
      <Image src="/images/about-image.png" width={500} height={500} />
      <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
       <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-      <p className='text-base lg:text-lg'>I am FrontEnd Web Developer  with a passion for creating interactive and responsive web application. I havw expericence working with HTML, CSS, Bootstrap, javaScript, jQuery, Tailwind CSS, React, Next js and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am team player and I am exicted to work with others to createamazing applications.
+      <p className='text-base lg:text-lg'>I am FrontEnd Web Developer  with a passion for creating interactive and responsive web application. I have expericence working with HTML, CSS, Bootstrap, javaScript, jQuery, Tailwind CSS, React, Next js and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am team player and I am exicted to work with others to create amazing applications.
       </p>
       <div className='flex flex-row justify-start mt-8 '>
         {/* <Tabbutton selectTab={( => handleTabChange("skills")} active={tab === "skills"}>Skills</Tabbutton> */} 
