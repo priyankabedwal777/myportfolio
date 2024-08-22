@@ -20,8 +20,8 @@ const projectsData = [
         description: "Project 1 description",
         image: project1img,
         tag: ["All", "Web"],
-        gitUrl:"/",
-        previewUrl:"/",
+        gitUrl:"https://github.com/priyankabedwal777/newwebsite",
+        previewUrl:"https://easycampus.ai/",
     },
     {
         id: 2,
@@ -30,44 +30,44 @@ const projectsData = [
         image: project2img,
         tag: ["All", "Web"],
         gitUrl:"/",
-        previewUrl:"/",
+        previewUrl:"http://89.116.33.93:3050/",
     },
-    {
-        id: 3,
-        title: "Project 3",
-        description: "Project 3 description",
-        image: project3img,
-        tag: ["All", "Web"],
-        gitUrl:"/",
-        previewUrl:"/",
-    },
-    {
-        id: 4,
-        title: "Project 4",
-        description: "Project 4 description",
-        image: project4img,
-        tag: ["All", "Mobile"],
-        gitUrl:"/",
-        previewUrl:"/",
-    },
-    {
-        id: 5,
-        title: "Project 5",
-        description: "Project 5 description",
-        image: project5img,
-        tag: ["All", "Web"],
-        gitUrl:"/",
-        previewUrl:"/",
-    },
-    {
-        id: 6,
-        title: "Project 6",
-        description: "Project 6 description",
-        image: project6img,
-        tag: ["All", "Mobile"],
-        gitUrl:"/",
-        previewUrl:"/",
-    }
+    // {
+    //     id: 3,
+    //     title: "Project 3",
+    //     description: "Project 3 description",
+    //     image: project3img,
+    //     tag: ["All", "Web"],
+    //     gitUrl:"/",
+    //     previewUrl:"/",
+    // },
+    // {
+    //     id: 4,
+    //     title: "Project 4",
+    //     description: "Project 4 description",
+    //     image: project4img,
+    //     tag: ["All", "Mobile"],
+    //     gitUrl:"/",
+    //     previewUrl:"/",
+    // },
+    // {
+    //     id: 5,
+    //     title: "Project 5",
+    //     description: "Project 5 description",
+    //     image: project5img,
+    //     tag: ["All", "Web"],
+    //     gitUrl:"/",
+    //     previewUrl:"/",
+    // },
+    // {
+    //     id: 6,
+    //     title: "Project 6",
+    //     description: "Project 6 description",
+    //     image: project6img,
+    //     tag: ["All", "Mobile"],
+    //     gitUrl:"/",
+    //     previewUrl:"/",
+    // }
 ];
 
 const Projectsection = () => {
@@ -93,21 +93,21 @@ const Projectsection = () => {
         <div>
             <h2 className='text-white text-center text-2xl font-semibold mt-2'>My Projects</h2>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6 '>
-            <Projecttag 
+            {/* <Projecttag 
             onClick={handleTagChange} 
             name="All" 
             isSelected={tag === "All"}
-            />
-            <Projecttag 
+            /> */}
+            {/* <Projecttag 
             onClick={handleTagChange} 
             name="Web" 
             isSelected={tag === "Web"}
-            />
-            <Projecttag 
+            /> */}
+            {/* <Projecttag 
             onClick={handleTagChange} 
             name="Mobile" 
             isSelected={tag === "Mobile"}
-            />
+            /> */}
             </div>
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 z-10"> 
                 {filterdProjects.map((project) => (

@@ -16,7 +16,7 @@ const Hero = () => {
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}
    className='col-span-8 place-self-center text-center sm:text-left justify-self-start'>
-    <h1 className='text-white mb-4 sm:text-5xl lg:text-8xl lg:leading-normal text-4xl font-extrabold'>
+    <h1 className='text-white mb-4 sm:text-5xl lg:text-6xl lg:leading-normal text-4xl font-extrabold'>
       <span className=' text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600'>Hello, I'm {" "}</span>
       <TypeAnimation
       sequence={[
@@ -31,10 +31,10 @@ const Hero = () => {
       ]}
       wrapper="span"
       speed={50}
-  
       repeat={Infinity}
     /></h1>
-    <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptas at vitae vero libero nam sit. Labore officiis qui excepturi enim, atque ad nostrum, suscipit tempore deleniti minus beatae? Dolor.
+    <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-5'>
+      As a passionate and ambitious Front-End Developer. Iam to leverage my strong foundation in web designing and developing technologies and design principles to contribute creatively and effectively to a dynamic team. Seeking an opportunity to apply and enhance my skills while delivering intuitive and user-friendly web experiences.
     </p>
     <div>
       <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 lg:mb-0 bg-gradient-to-br from-primary-500 to-secondary-500 text-white'>Hire Me</button>
