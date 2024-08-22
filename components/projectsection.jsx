@@ -59,15 +59,6 @@ const projectsData = [
     //     gitUrl:"/",
     //     previewUrl:"/",
     // },
-    // {
-    //     id: 6,
-    //     title: "Project 6",
-    //     description: "Project 6 description",
-    //     image: project6img,
-    //     tag: ["All", "Mobile"],
-    //     gitUrl:"/",
-    //     previewUrl:"/",
-    // }
 ];
 
 const Projectsection = () => {
