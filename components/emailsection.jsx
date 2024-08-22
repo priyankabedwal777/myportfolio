@@ -84,7 +84,7 @@ const emailsection = () => {
                  </div>
                  <div className='mb-6'>
                     <label htmlFor='message' className='text-white block text-sm mb-2 font-medium'>
-                    Message Message Message Message
+                    Message 
                     </label>
                     <textarea
                     name='message'
