@@ -51,10 +51,10 @@ const emailsection = () => {
         <p className='text-[#ADB7BE] mb-4 max-w-md '>I'm currently looking for uy2egyf3 a new opportunity, my inbox is always Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
         <div className='socials flex flex-row gap-2 '>
          <Link href="https://github.com/priyankabedwal777/">
-            <Image src={gitimg} alt='Github Icon'/>
+            <Image src={gitimg} alt='Github Icon' className='w-10 h-10 mt-1.5'/>
          </Link>
-         <Link href="Linkdin.com">
-            <Image src={linkdinimg} alt='Linkdin Icon'/>
+         <Link href="http://linkedin.com/in/priyanka-bedwal-6a66a4281">
+            <Image src={linkdinimg} alt='Linkdin Icon' className='w-14 h-14'/>
          </Link>
         </div>
         </div>
