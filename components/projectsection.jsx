@@ -1,14 +1,9 @@
 "use client";
 import React, {useState, useRef} from 'react';
 import Image from 'next/image';
-import Projectscards from './projectscards';
-import Projecttag from './projecttag';
-import project1img from "../public/projects/1.png";
-import project2img from "../public/projects/2.png";
-import project3img from "../public/projects/3.png";
-import project4img from "../public/projects/4.png";
-import project5img from "../public/projects/5.png";
-import project6img from "../public/projects/6.png";
+import project1img from "../public/images/projectshot.png";
+import project2img from "../public/images/projectshot2.png"
+// import project2img from "../public/projects/2.png";
 import Link from 'next/link';
 import { motion, useInView } from "framer-motion";
 
