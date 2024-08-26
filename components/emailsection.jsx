@@ -5,9 +5,6 @@ import Image from 'next/image';
 import gitimg from "../public/images/git.png";
 import linkdinimg from "../public/images/linkdin.png";
 
-
-   
-
 const emailsection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
      const handleSubmit = async (e) => {
@@ -19,16 +16,11 @@ const emailsection = () => {
        }; 
        const JSONdata = JSON.stringify(data);
        const endpoint = "/api/send";
-       
-    
        const options = {
-        
         method: 'POST',
-
         headers:{
             'Content-Type': 'applicationsjson'
        },
-
         body:JSONdata,
        }
 
@@ -40,8 +32,6 @@ const emailsection = () => {
         setEmailSubmitted(true);
        }
     };
-
-    
 
   return (
     <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
@@ -102,7 +92,7 @@ const emailsection = () => {
                  {
                   emailSubmitted  && (
                     <p className='tect-green-500 text-sm mt-2'>
-                        Email sent successfully!
+                        Email sent successfully!!
                     </p>
                   ) 
                  }
