@@ -92,7 +92,7 @@ const emailsection = () => {
                  {
                   emailSubmitted  && (
                     <p className='tect-green-500 text-sm mt-2'>
-                        Email sent successfully!!
+                        Email sent successfully!
                     </p>
                   ) 
                  }
