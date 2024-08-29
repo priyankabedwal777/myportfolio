@@ -5,7 +5,41 @@ import Image from 'next/image';
 import gitimg from "../public/images/git.png";
 import linkdinimg from "../public/images/linkdin.png";
 
+
 const emailsection = () => {
+  // const [formData, setFormData] = useState({
+  //   email: '',
+  //   subject: '',
+  //   message: '',
+  // });
+  // const [status, setStatus] = useState('');
+
+  // const handleChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setStatus('Sending...');
+    
+  //   const response = await fetch('/api/contact', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(formData),
+  //   });
+
+  //   if (response.ok) {
+  //     setStatus('Message sent successfully!');
+  //     setFormData({ email: '', subject: '', message: '' });
+  //   } else {
+  //     setStatus('Failed to send message.');
+  //   }
+  // };
     const [emailSubmitted, setEmailSubmitted] = useState(false);
      const handleSubmit = async (e) => {
        e.preventDefault();
@@ -97,6 +131,36 @@ const emailsection = () => {
                   ) 
                  }
             </form>
+             {/* <div>
+      <h1>Contact Us</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="text"
+          name="subject"
+          placeholder="Subject"
+          value={formData.subject}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit" className='bg-red-600'>Send</button>
+      </form>
+      <p>{status}</p>
+   ,          </div> */}
         </div>
         </section>
   )

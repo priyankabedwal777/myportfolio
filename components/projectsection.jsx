@@ -3,7 +3,7 @@ import React, {useState, useRef} from 'react';
 import Image from 'next/image';
 import project1img from "../public/images/projectshot.png";
 import project2img from "../public/images/projectshot2.png"
-// import project2img from "../public/projects/2.png";
+import project3img from "../public/images/projectshot4.png";
 import Link from 'next/link';
 import { motion, useInView } from "framer-motion";
 
@@ -27,15 +27,15 @@ const projectsData = [
         gitUrl:"/",
         previewUrl:"http://89.116.33.93:3050/",
     },
-    // {
-    //     id: 3,
-    //     title: "Project 3",
-    //     description: "Project 3 description",
-    //     image: project3img,
-    //     tag: ["All", "Web"],
-    //     gitUrl:"/",
-    //     previewUrl:"/",
-    // },
+    {
+        id: 3,
+        title: "Project 3",
+        description: "Project 3 description",
+        image: project3img,
+        tag: ["All", "Web"],
+        gitUrl:"/",
+        previewUrl:"/",
+    },
     // {
     //     id: 4,
     //     title: "Project 4",
