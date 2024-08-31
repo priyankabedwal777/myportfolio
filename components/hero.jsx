@@ -34,7 +34,7 @@ const Hero = () => {
       repeat={Infinity}
     /></h1>
     <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-5'>
-      As a passionate and ambitious Front-End Developer. Iam to leverage my strong foundation in web designing and developing technologies and design principles to contribute creatively and effectively to a dynamic team. Seeking an opportunity to apply and enhance my skills while delivering intuitive and user-friendly web experiences.
+      As a passionate and ambitious FrontEnd Developer. I am to leverage my strong foundation in web designing and developing technologies and design principles to contribute creatively and effectively to a dynamic team. Seeking an opportunity to apply and enhance my skills while delivering intuitive and user-friendly web experiences.
     </p>
     <div>
       <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 lg:mb-0 bg-gradient-to-br from-primary-500 to-secondary-500 text-white'>Hire Me</button>
