@@ -5,7 +5,6 @@ import heroImage from "../public/images/hero-image.png";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
 
-
 // first section design hire me
 const Hero = () => {
   return (
@@ -58,10 +57,9 @@ const Hero = () => {
      width={300}
      height={300}
      className=' absolute'
-    //  transform -translate-x-1/2 -translate-y-1/2 left-1/2
+     //  transform -translate-x-1/2 -translate-y-1/2 left-1/2
      />
      </div>
-     
     </motion.div>
     </div> 
    </section>
