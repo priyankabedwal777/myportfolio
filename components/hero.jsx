@@ -39,9 +39,9 @@ const Hero = () => {
       <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 lg:mb-0 bg-gradient-to-br from-primary-500 to-secondary-500 text-white'>Hire Me</button>
       <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3'>
       <a href="/resume.png" download="resume.png">
-      <button style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}>
+      <div style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}>
           Download CV
-       </button>
+       </div>
        </a>
         </button>
     </div>
